@@ -80,8 +80,7 @@ class _MovieListState extends State<MovieList> {
     var response = await dio.get(url);
     print('url:' + url);
     var result = response.data;
-    print(result);
-
+    print('result:${result}');
     setState(() {
       mlist = result['subjects'];
       total = result['total'];
